@@ -1,6 +1,17 @@
-const hrefPagina = location.href;
+const tabMenu = document.querySelectorAll('.js-tabmenu li');
+const tabContent = document.querySelectorAll('.js-tabcontent section');
 
-console.log(hrefPagina);
+if(tabMenu.length && tabContent.length){
+  tabContent[0].classList.add('ativo')
 
+  function activeTab(index) {
+    tabContent.forEach((section) => {
+      section.classList.remove('ativo')
+    })
+    tabContent[index].classList.add('ativo')
+  }
 
-const elementoAtivo = document.querySelector('.ativog')
+  tabMenu.forEach((itemMenu, index) =>{
+    itemMenu.addEventListener('click', () => activeTab(index) )
+  })
+}
