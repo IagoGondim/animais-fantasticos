@@ -264,3 +264,13 @@ body {
   }
 }
 
+.js .js-scroll {
+  opacity: 0;
+  transform: translate3d(-20px, 0, 0);
+  transition: 300ms;
+}
+
+.js .js-scroll.ativo {
+  opacity: 1;
+  transform: translate3d(0px, 0, 0);
+}
