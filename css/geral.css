@@ -40,7 +40,7 @@ body {
 
 .menu li a {
   display: block;
-  padding: 16px 11px;
+  padding: 16px;
   margin-right: 10px;
   color: #222;
   text-decoration: none;
